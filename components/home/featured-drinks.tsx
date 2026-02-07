@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+
 import {
   ChevronLeft,
   ChevronRight,
@@ -22,6 +24,7 @@ const featuredDrinks = [
     name: "Espresso Protocol",
     description: "Pure, concentrated energy. The foundation of every great codebase.",
     price: "$4.50",
+    image: "/image/photo3.jpg",
     icon: Cpu,
     tags: ["Hot", "High Caffeine"],
     color: "from-amber-600 to-amber-800",
@@ -34,6 +37,7 @@ const featuredDrinks = [
     icon: Database,
     tags: ["Cold", "High Caffeine"],
     color: "from-sky-600 to-sky-800",
+    image: "/image/photo2.jpg"
   },
   {
     id: 3,
@@ -43,12 +47,14 @@ const featuredDrinks = [
     icon: RefreshCw,
     tags: ["Hot", "Medium Caffeine"],
     color: "from-orange-500 to-orange-700",
+    image: "/image/photo4.jpg"
   },
   {
     id: 4,
     name: "Mocha Stack",
     description: "Layered chocolate and espresso. A full-stack flavor experience.",
     price: "$6.00",
+    image: "/image/photo1.jpg",
     icon: Layers,
     tags: ["Hot", "Medium Caffeine"],
     color: "from-rose-600 to-rose-800",
@@ -58,6 +64,8 @@ const featuredDrinks = [
     name: "Syntax Shot",
     description: "Quick, precise, powerful. Execute your morning in one line.",
     price: "$3.50",
+    image: "/image/photo5.jpg",
+
     icon: Zap,
     tags: ["Hot", "Extreme Caffeine"],
     color: "from-yellow-500 to-amber-600",
@@ -123,21 +131,33 @@ export function FeaturedDrinks() {
               {featuredDrinks.map((drink) => (
                 <div
                   key={drink.id}
-                  className="w-full flex-shrink-0 px-4"
+                  className="w-full flex-shrink-0 "
                 >
                   <Card className="overflow-hidden bg-background border-border">
                     <CardContent className="p-0">
                       <div className="grid md:grid-cols-2 gap-0">
-                        {/* Image/Icon Section */}
-                        <div
-                          className={`bg-gradient-to-br ${drink.color} p-12 flex items-center justify-center min-h-[300px]`}
-                        >
-                          <div className="relative">
-                            <Coffee className="h-32 w-32 text-white/20 absolute -top-4 -left-4" />
-                            <drink.icon className="h-24 w-24 text-white relative z-10" />
+                        {/* Image Section */}
+                        <div className={`bg-gradient-to-br ${drink.color} p-12 flex items-center justify-center min-h-[300px] relative overflow-hidden`}>
+                          {/* خلفية متدرجة */}
+                          <div className={`absolute inset-0 bg-gradient-to-br ${drink.color}`} />
+
+                          {/* تأثير فقاعات */}
+                          <div className="absolute top-4 right-8 w-6 h-6 rounded-full bg-white/10 blur-sm" />
+                          <div className="absolute bottom-8 left-12 w-8 h-8 rounded-full bg-white/5 blur-sm" />
+
+                          {/* الصورة */}
+                          <div className="relative z-10">
+                            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+                              <Image
+                                src={drink.image}
+                                alt={drink.name}
+                                width={192}
+                                height={192}
+                                className="object-cover w-full h-full"
+                              />
+                            </div>
                           </div>
                         </div>
-
                         {/* Content Section */}
                         <div className="p-8 flex flex-col justify-center">
                           <div className="flex gap-2 mb-4">
@@ -183,11 +203,10 @@ export function FeaturedDrinks() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === activeIndex
-                    ? "bg-accent w-6"
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
+                className={`w-2 h-2 rounded-full transition-all ${index === activeIndex
+                  ? "bg-accent w-6"
+                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

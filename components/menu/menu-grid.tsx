@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react"
+import Image from "next/image";
 
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -36,6 +37,7 @@ interface MenuItem {
   temperature: "hot" | "cold";
   category: "espresso" | "brewed" | "specialty" | "cold" | "treats";
   tags: string[];
+  image?: string;
 }
 
 const menuItems: MenuItem[] = [
@@ -49,6 +51,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "espresso",
     tags: ["Classic", "Quick"],
+    image: "/image/photo3.jpg",
   },
   {
     id: 2,
@@ -60,6 +63,7 @@ const menuItems: MenuItem[] = [
     temperature: "cold",
     category: "cold",
     tags: ["Smooth", "Strong"],
+    image: "/image/photo2.jpg",
   },
   {
     id: 3,
@@ -71,6 +75,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "espresso",
     tags: ["Creamy", "Popular"],
+    image: "/image/photo4.jpg",
   },
   {
     id: 4,
@@ -82,6 +87,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "specialty",
     tags: ["Sweet", "Indulgent"],
+    image: "/image/photo1.jpg",
   },
   {
     id: 5,
@@ -93,6 +99,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "espresso",
     tags: ["Intense", "Fast"],
+    image: "/image/photo5.jpg",
   },
   {
     id: 6,
@@ -104,6 +111,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "espresso",
     tags: ["Classic", "Light"],
+    image: "/image/photo11.jpg",
   },
   {
     id: 7,
@@ -115,6 +123,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "espresso",
     tags: ["Foamy", "Balanced"],
+    image: "/image/photo9.jpg",
   },
   {
     id: 8,
@@ -126,6 +135,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "brewed",
     tags: ["Simple", "Refillable"],
+    image: "/image/photo6.jpg",
   },
   {
     id: 9,
@@ -137,6 +147,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "brewed",
     tags: ["Calm", "Variety"],
+    image: "/image/photo10.jpg",
   },
   {
     id: 10,
@@ -148,6 +159,7 @@ const menuItems: MenuItem[] = [
     temperature: "cold",
     category: "cold",
     tags: ["Healthy", "Fresh"],
+    image: "/image/photo7.jpg",
   },
   {
     id: 11,
@@ -159,6 +171,7 @@ const menuItems: MenuItem[] = [
     temperature: "cold",
     category: "cold",
     tags: ["Sweet", "Blended"],
+    image: "/image/photo8.jpg",
   },
   {
     id: 12,
@@ -170,6 +183,7 @@ const menuItems: MenuItem[] = [
     temperature: "hot",
     category: "brewed",
     tags: ["Premium", "Artisan"],
+    image: "/image/photo12.jpg",
   },
 ];
 
@@ -300,10 +314,19 @@ export function MenuGrid() {
               className="bg-card border-border hover:border-accent/50 transition-all group overflow-hidden"
             >
               <CardContent className="p-0">
-                {/* Icon Header */}
-                <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                  <item.icon className="h-16 w-16 text-primary group-hover:text-accent transition-colors" />
+                {/* Container للصورة */}
+                <div className="relative w-48 h-48 mx-auto my-4 rounded-lg overflow-hidden">
+                  <Image
+                    src={item.image ?? "/image/default.jpg"} // fallback إذا ما فيه صورة
+                    alt={item.name}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
+
+
+
 
                 {/* Content */}
                 <div className="p-6">

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Chen",
+    name: "ali ",
     role: "Senior Developer @ TechCorp",
     avatar: "SC",
     rating: 5,
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Marcus Johnson",
+    name: "ahmed",
     role: "CS Student, Stanford",
     avatar: "MJ",
     rating: 5,
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Elena Rodriguez",
+    name: "dddd",
     role: "Freelance Full-Stack Dev",
     avatar: "ER",
     rating: 5,
@@ -37,7 +37,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "David Kim",
+    name: "Davidaa",
     role: "Backend Engineer @ StartupXYZ",
     avatar: "DK",
     rating: 5,
