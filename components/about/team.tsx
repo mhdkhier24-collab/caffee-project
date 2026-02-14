@@ -21,6 +21,14 @@ const team = [
     social: { github: "#", linkedin: "#" },
   },
   {
+    name: "Kamar",
+    role: "CTO & Systems Architect",
+    bio: "Builds the infrastructure behind the experience. Obsessed with performance, scalability, and clean architecture.",
+    avatar: "KA",
+    skills: ["System Design", "DevOps"],
+    social: { github: "#", linkedin: "#" },
+  },
+  {
     name: "Shahed",
     role: "Community Manager",
     bio: "Connects developers and organizes events. Previously ran tech meetups for 5 years.",
@@ -34,6 +42,14 @@ const team = [
     bio: "Keeps everything running smoothly. Background in hospitality and startup operations.",
     avatar: "AM",
     skills: ["Operations", "Strategy"],
+    social: { linkedin: "#" },
+  },
+  {
+    name: "Shaimaa",
+    role: "Head of Operations",
+    bio: "Designs the vibe before you even taste the coffee.",
+    avatar: "SHA",
+    skills: ["UI/UX", "Branding"],
     social: { linkedin: "#" },
   },
 ];

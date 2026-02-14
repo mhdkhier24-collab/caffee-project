@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "ali ",
+    name: "Ahmed Ows ",
     role: "Senior Developer @ TechCorp",
     avatar: "SC",
     rating: 5,
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "ahmed",
+    name: "Hayyan Alsibai",
     role: "CS Student, Stanford",
     avatar: "MJ",
     rating: 5,
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "dddd",
+    name: "Riad Niof",
     role: "Freelance Full-Stack Dev",
     avatar: "ER",
     rating: 5,
@@ -37,7 +37,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Davidaa",
+    name: "Rizq Ghanem",
     role: "Backend Engineer @ StartupXYZ",
     avatar: "DK",
     rating: 5,
@@ -46,7 +46,7 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Priya Patel",
+    name: "Taj Al-din Husseini",
     role: "DevOps Lead @ CloudScale",
     avatar: "PP",
     rating: 5,
@@ -188,11 +188,10 @@ export function TestimonialsSection() {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === activeIndex
+                  className={`w-2 h-2 rounded-full transition-all ${index === activeIndex
                       ? "bg-accent w-6"
                       : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                  }`}
+                    }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
