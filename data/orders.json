@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T11:42:46.203Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T11:45:56.515Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "4.25",
+    "createdAt": "2026-02-14T11:46:01.287Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T12:21:23.878Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T12:21:24.398Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T12:21:24.740Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T12:21:31.632Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T12:58:49.473Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:01.783Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:08.129Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:08.661Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:08.818Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:08.973Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:09.140Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:09.306Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:09.491Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:09.661Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:17:09.804Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:17.673Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:26.557Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:26.714Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:27.255Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:38.761Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:18:38.923Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": "3.50",
+    "createdAt": "2026-02-14T17:22:19.644Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-14T17:31:35.425Z"
+  },
+  {
+    "name": "Hazelnut Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 3,
+    "total": 6.5,
+    "createdAt": "2026-02-14T17:31:53.387Z"
+  }
+]

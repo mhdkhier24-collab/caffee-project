@@ -6,6 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import "./globals.css";
+import { CartProvider } from "@/components/CartContext";
+
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrainsMono = JetBrains_Mono({
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
     description: "Where coffee meets code - bridging tech culture with premium coffee",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 };
 
 export const viewport: Viewport = {
@@ -56,11 +59,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <CartProvider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </CartProvider>
         </ThemeProvider>
         <Analytics />
       </body>

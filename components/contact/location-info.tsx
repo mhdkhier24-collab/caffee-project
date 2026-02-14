@@ -27,7 +27,7 @@ const amenities = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Github, href: "https://github.com/mhdkhier24-collab", label: "GitHub" },
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Instagram, href: "#", label: "Instagram" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
@@ -69,7 +69,7 @@ export function LocationInfo() {
                   <br />
                   Innovation District
                   <br />
-                  San Francisco, CA 94105
+                  daraa, izraa
                 </p>
               </div>
             </div>

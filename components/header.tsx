@@ -7,6 +7,8 @@ import { Moon, Sun, Menu, X, Coffee, Terminal } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useCart } from "@/components/CartContext";
+
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -16,21 +18,34 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+
 export function Header() {
+  const { cartOrders, toggleCart, showCart } = useCart();
+
   const [isOpen, setIsOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
+  const cartRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     setMounted(true);
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // اغلاق السلة عند الضغط خارجها
+  React.useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (cartRef.current && !cartRef.current.contains(e.target as Node)) {
+        if (showCart) toggleCart();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showCart, toggleCart]);
 
   return (
     <header
@@ -42,7 +57,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto px-4">
-        <nav className="flex h-16 items-center justify-between">
+        <nav className="flex h-16 items-center justify-between relative">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative">
@@ -96,6 +111,39 @@ export function Header() {
               </Button>
             )}
 
+            {/* Cart Icon */}
+            <Button
+              variant="ghost" size="icon"
+              onClick={toggleCart}
+              className="rounded-full relative"
+            >
+              <Coffee className="h-5 w-5" />
+              {cartOrders.length > 0 && (
+                <span className="absolute -top-1 -right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-accent rounded-full">
+                  {cartOrders.length}
+                </span>
+              )}
+            </Button>
+
+            {/* Cart Modal */}
+            {showCart && (
+              <div
+                ref={cartRef}
+                className="absolute right-0 mt-12 w-64 bg-background border border-border rounded-lg shadow-lg p-4 z-50"
+              >
+                <h4 className="font-bold mb-2">Your Cart</h4>
+                {cartOrders.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No items yet</p>
+                ) : (
+                  cartOrders.map((order, i) => (
+                    <div key={i} className="border-b last:border-b-0 py-1 text-sm">
+                      {order.name} - ${order.total}
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
+
             {/* CTA Button - Desktop */}
             <Button
               asChild
@@ -111,11 +159,7 @@ export function Header() {
               className="md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               <span className="sr-only">Toggle menu</span>
             </Button>
           </div>

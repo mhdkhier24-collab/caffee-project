@@ -8,43 +8,52 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Coffee, Sparkles, Plus, Minus } from "lucide-react";
-
-const baseOptions = [
-  { id: "espresso", name: "Espresso", price: 3.5 },
-  { id: "cold-brew", name: "Cold Brew", price: 4.0 },
-  { id: "drip", name: "Drip Coffee", price: 2.5 },
-  { id: "tea", name: "Tea Base", price: 3.0 },
-];
-
-const milkOptions = [
-  { id: "none", name: "No Milk", price: 0 },
-  { id: "whole", name: "Whole Milk", price: 0 },
-  { id: "oat", name: "Oat Milk", price: 0.75 },
-  { id: "almond", name: "Almond Milk", price: 0.75 },
-  { id: "soy", name: "Soy Milk", price: 0.5 },
-];
-
-const flavorOptions = [
-  { id: "vanilla", name: "Vanilla", price: 0.5 },
-  { id: "caramel", name: "Caramel", price: 0.5 },
-  { id: "hazelnut", name: "Hazelnut", price: 0.5 },
-  { id: "mocha", name: "Mocha", price: 0.75 },
-  { id: "lavender", name: "Lavender", price: 0.75 },
-];
-
-const extraOptions = [
-  { id: "extra-shot", name: "Extra Shot", price: 1.0 },
-  { id: "whipped", name: "Whipped Cream", price: 0.5 },
-  { id: "cinnamon", name: "Cinnamon Dust", price: 0 },
-  { id: "cocoa", name: "Cocoa Powder", price: 0 },
-];
+import { useCart } from "@/components/CartContext";
 
 export function BuildYourBrew() {
+
+  const { addToCart } = useCart();
+
+
+  const baseOptions = [
+    { id: "espresso", name: "Espresso", price: 3.5 },
+    { id: "cold-brew", name: "Cold Brew", price: 4.0 },
+    { id: "drip", name: "Drip Coffee", price: 2.5 },
+    { id: "tea", name: "Tea Base", price: 3.0 },
+  ];
+
+  const milkOptions = [
+    { id: "none", name: "No Milk", price: 0 },
+    { id: "whole", name: "Whole Milk", price: 0 },
+    { id: "oat", name: "Oat Milk", price: 0.75 },
+    { id: "almond", name: "Almond Milk", price: 0.75 },
+    { id: "soy", name: "Soy Milk", price: 0.5 },
+  ];
+
+  const flavorOptions = [
+    { id: "vanilla", name: "Vanilla", price: 0.5 },
+    { id: "caramel", name: "Caramel", price: 0.5 },
+    { id: "hazelnut", name: "Hazelnut", price: 0.5 },
+    { id: "mocha", name: "Mocha", price: 0.75 },
+    { id: "lavender", name: "Lavender", price: 0.75 },
+  ];
+
+  const extraOptions = [
+    { id: "extra-shot", name: "Extra Shot", price: 1.0 },
+    { id: "whipped", name: "Whipped Cream", price: 0.5 },
+    { id: "cinnamon", name: "Cinnamon Dust", price: 0 },
+    { id: "cocoa", name: "Cocoa Powder", price: 0 },
+  ];
+
+
   const [base, setBase] = useState("espresso");
   const [milk, setMilk] = useState("none");
   const [flavors, setFlavors] = useState<string[]>([]);
   const [extras, setExtras] = useState<string[]>([]);
   const [shots, setShots] = useState(1);
+
+  const [isOrdering, setIsOrdering] = useState(false);
+  const [orderSuccess, setOrderSuccess] = useState(false);
 
   const toggleFlavor = (id: string) => {
     setFlavors((prev) =>
@@ -69,15 +78,65 @@ export function BuildYourBrew() {
       total += extraOptions.find((eo) => eo.id === e)?.price || 0;
     });
     total += (shots - 1) * 1.0; // Extra shots
-    return total.toFixed(2);
+    return total;
   };
 
   const generateBrewName = () => {
-    const baseName = baseOptions.find((b) => b.id === base)?.name || "";
-    const milkName = milk !== "none" ? milkOptions.find((m) => m.id === milk)?.name : "";
-    const flavorNames = flavors.map((f) => flavorOptions.find((fo) => fo.id === f)?.name).join(" ");
-    
+    const baseName = baseOptions.find((b) => b.id === base)?.name ?? "";
+    const milkName = milk !== "none" ? milkOptions.find((m) => m.id === milk)?.name ?? "" : "";
+    const flavorNames = flavors
+      .map((f) => flavorOptions.find((fo) => fo.id === f)?.name ?? "")
+      .join(" ");
+
     return `${flavorNames} ${milkName} ${baseName}`.trim().replace(/\s+/g, " ");
+  };
+
+  const handleOrder = async () => {
+    setIsOrdering(true);
+    setOrderSuccess(false);
+    const newOrder = {
+      name: generateBrewName(),
+      base,
+      milk,
+      flavors,
+      extras,
+      shots,
+      total: calculateTotal(),
+
+
+    };
+    addToCart(newOrder);
+
+    // أضف مباشرة للسلة إذا دالة addOrder موجودة
+
+
+    try {
+      const response = await fetch("/api/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: generateBrewName(),
+          base,
+          milk,
+          flavors,
+          extras,
+          shots,
+          total: calculateTotal(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to create order");
+      }
+
+      setOrderSuccess(true);
+    } catch (error) {
+      alert("Failed to create order");
+    } finally {
+      setIsOrdering(false);
+    }
   };
 
   return (
@@ -277,14 +336,24 @@ export function BuildYourBrew() {
                   {/* Total */}
                   <div className="flex justify-between items-center mb-6 text-lg">
                     <span className="text-muted-foreground">Total:</span>
-                    <span className="text-3xl font-bold text-accent font-mono">${calculateTotal()}</span>
+                    <span className="text-3xl font-bold text-accent font-mono">${calculateTotal().toFixed(2)}</span>
                   </div>
 
                   {/* Add to Order Button */}
-                  <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-mono">
+                  <Button
+                    onClick={handleOrder}
+                    disabled={isOrdering}
+                    className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-mono"
+                  >
                     <Sparkles className="mr-2 h-4 w-4" />
-                    {"order.create()"}
+                    {isOrdering ? "Processing..." : "order.create()"}
+
                   </Button>
+                  {orderSuccess && (
+                    <p className="text-green-500 text-sm mt-4 font-mono">
+    // Order successfully created ✅
+                    </p>
+                  )}
                 </div>
               </CardContent>
             </Card>

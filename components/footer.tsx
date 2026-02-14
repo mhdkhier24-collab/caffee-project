@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Github, href: "https://github.com/mhdkhier24-collab", label: "GitHub" },
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Instagram, href: "#", label: "Instagram" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
@@ -57,6 +57,9 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+
                   className="p-2 rounded-full bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
                   aria-label={social.label}
                 >

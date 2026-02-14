@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react"
-
-import { useState } from "react";
+import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -27,9 +25,25 @@ export function ContactForm() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // هنا ربطنا الفورم مع الـ Backend
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("Failed to send message. Try again later.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong!");
+    }
   };
 
   if (isSubmitted) {
@@ -165,4 +179,4 @@ export function ContactForm() {
       </Card>
     </div>
   );
-}
+}             

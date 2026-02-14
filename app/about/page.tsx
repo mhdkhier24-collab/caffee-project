@@ -1,10 +1,12 @@
 import { Metadata } from "next";
 import { AboutHero } from "@/components/about/about-hero";
+import { AboutVideo } from "@/components/about/about-video";
 import { BrandStory } from "@/components/about/brand-story";
 import { MissionValues } from "@/components/about/mission-values";
 import { Team } from "@/components/about/team";
 import { Timeline } from "@/components/about/timeline";
 import { FAQ } from "@/components/about/faq";
+
 
 export const metadata: Metadata = {
   title: "About | Caffe Syntax",
@@ -15,6 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
+      <AboutVideo />
       <BrandStory />
       <MissionValues />
       <Team />
