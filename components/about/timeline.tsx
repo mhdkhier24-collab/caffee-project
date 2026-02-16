@@ -69,9 +69,8 @@ export function Timeline() {
               {timelineItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-4 md:left-1/2 w-8 h-8 -translate-x-1/2 bg-background border-2 border-border rounded-full flex items-center justify-center z-10">
@@ -86,14 +85,12 @@ export function Timeline() {
 
                   {/* Content */}
                   <div
-                    className={`flex-1 ml-16 md:ml-0 ${
-                      index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
-                    }`}
+                    className={`flex-1 ml-16 md:ml-0 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
+                      }`}
                   >
                     <div
-                      className={`bg-background border border-border rounded-lg p-6 ${
-                        item.status === "current" ? "border-accent/50" : ""
-                      }`}
+                      className={`bg-background border border-border rounded-lg p-6 ${item.status === "current" ? "border-accent/50" : ""
+                        }`}
                     >
                       {/* Header */}
                       <div className="flex items-center gap-3 mb-2">
@@ -128,9 +125,8 @@ export function Timeline() {
                         {item.milestones.map((milestone, i) => (
                           <li
                             key={i}
-                            className={`text-sm flex items-center gap-2 ${
-                              index % 2 === 0 ? "md:justify-end" : ""
-                            }`}
+                            className={`text-sm flex items-center gap-2 ${index % 2 === 0 ? "md:justify-end" : ""
+                              }`}
                           >
                             <ArrowRight className="h-3 w-3 text-accent" />
                             <span className="text-foreground">{milestone}</span>

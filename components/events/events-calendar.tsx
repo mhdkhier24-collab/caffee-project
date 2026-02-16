@@ -28,10 +28,10 @@ const eventTypeColors: Record<string, string> = {
 
 export function EventsCalendar() {
   const [currentMonth] = useState(new Date(2026, 1)); // February 2026
-  
+
   const daysInMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0).getDate();
   const firstDayOfMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1).getDay();
-  
+
   const monthName = currentMonth.toLocaleString("default", { month: "long", year: "numeric" });
 
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -98,17 +98,15 @@ export function EventsCalendar() {
                 return (
                   <div
                     key={day}
-                    className={`aspect-square p-1 rounded-lg border transition-colors ${
-                      dayEvents.length > 0
+                    className={`aspect-square p-1 rounded-lg border transition-colors ${dayEvents.length > 0
                         ? "border-accent/50 bg-accent/5 hover:bg-accent/10 cursor-pointer"
                         : "border-transparent hover:border-border"
-                    } ${isToday ? "ring-2 ring-accent" : ""}`}
+                      } ${isToday ? "ring-2 ring-accent" : ""}`}
                   >
                     <div className="h-full flex flex-col">
                       <span
-                        className={`text-sm font-mono ${
-                          isToday ? "text-accent font-bold" : "text-foreground"
-                        }`}
+                        className={`text-sm font-mono ${isToday ? "text-accent font-bold" : "text-foreground"
+                          }`}
                       >
                         {day}
                       </span>

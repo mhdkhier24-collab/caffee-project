@@ -2033,5 +2033,41 @@
     "total": 10,
     "quantity": 1,
     "createdAt": "2026-02-16T15:57:39.547Z"
+  },
+  {
+    "id": "48d032c3-be03-459a-a9f1-9063dddecc37",
+    "name": "Cloud Cappuccino",
+    "base": "default",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "quantity": 1,
+    "createdAt": "2026-02-16T18:05:45.785Z"
+  },
+  {
+    "id": "68845f9e-ac6f-4569-8c8f-e3fb24129053",
+    "name": "Cold Brew Kernel",
+    "base": "default",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.5,
+    "quantity": 1,
+    "createdAt": "2026-02-16T18:07:21.776Z"
+  },
+  {
+    "id": "d4fc6ca6-7950-4bff-9b67-55c57eca492d",
+    "name": "Latte Loop",
+    "base": "default",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "quantity": 1,
+    "createdAt": "2026-02-16T18:07:22.223Z"
   }
 ]
