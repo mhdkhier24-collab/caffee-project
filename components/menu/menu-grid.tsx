@@ -22,6 +22,8 @@ import {
   Flame,
   Snowflake,
 } from "lucide-react";
+import { useCart } from "@/components/CartContext"
+
 
 type CaffeineLevel = "all" | "low" | "medium" | "high" | "extreme";
 type Temperature = "all" | "hot" | "cold";
@@ -213,6 +215,7 @@ export function MenuGrid() {
   const [caffeineFilter, setCaffeineFilter] = useState<CaffeineLevel>("all");
   const [tempFilter, setTempFilter] = useState<Temperature>("all");
   const [categoryFilter, setCategoryFilter] = useState<Category>("all");
+  const { addToCart } = useCart();
 
   const filteredItems = menuItems.filter((item) => {
     if (caffeineFilter !== "all" && item.caffeineLevel !== caffeineFilter) return false;
@@ -228,6 +231,39 @@ export function MenuGrid() {
       case "high": return "bg-orange-500/20 text-orange-600 dark:text-orange-400";
       case "extreme": return "bg-red-500/20 text-red-600 dark:text-red-400";
       default: return "bg-muted text-muted-foreground";
+    }
+  };
+  const handleAddItem = async (item: MenuItem) => {
+    // حوّل السعر لنص رقمي
+    const price = item.prices.byte !== "-" ? parseFloat(item.prices.byte.replace("$", "")) : 0;
+
+    // جهّز البيانات بنفس شكل Order
+    const newOrder = {
+      id: crypto.randomUUID(),
+      name: item.name,
+      base: "default",
+      milk: "none",
+      flavors: [],
+      extras: [],
+      shots: 1,
+      total: price,
+      quantity: 1,
+    };
+
+    // أضف للسلة
+    addToCart(newOrder);
+
+    // أرسل للـ API ليحفظ في orders.json
+    try {
+      const res = await fetch("/api/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newOrder),
+      });
+      const data = await res.json();
+      console.log("Order saved:", data);
+    } catch (err) {
+      console.error("Failed to save order:", err);
     }
   };
 
@@ -366,7 +402,15 @@ export function MenuGrid() {
                       <span className="font-semibold text-foreground">{item.prices.giga}</span>
                     </div>
                   </div>
+                  <Button
+                    onClick={() => handleAddItem(item)}
+                    className="w-full mt-2 bg-accent text-accent-foreground hover:bg-accent/90 font-mono"
+                  >
+                    order.create()
+                  </Button>
+
                 </div>
+
               </CardContent>
             </Card>
           ))}

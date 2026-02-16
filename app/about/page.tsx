@@ -6,6 +6,7 @@ import { MissionValues } from "@/components/about/mission-values";
 import { Team } from "@/components/about/team";
 import { Timeline } from "@/components/about/timeline";
 import { FAQ } from "@/components/about/faq";
+import { Cart } from "@/components/Cart";
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function AboutPage() {
       <Team />
       <Timeline />
       <FAQ />
+      <Cart />
     </>
   );
 }

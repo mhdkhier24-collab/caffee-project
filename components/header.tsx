@@ -20,7 +20,8 @@ const navLinks = [
 
 
 export function Header() {
-  const { cartOrders, toggleCart, showCart } = useCart();
+  const { cartOrders, toggleCart, showCart, increaseQuantity,
+    decreaseQuantity } = useCart();
 
   const [isOpen, setIsOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -120,29 +121,104 @@ export function Header() {
               <Coffee className="h-5 w-5" />
               {cartOrders.length > 0 && (
                 <span className="absolute -top-1 -right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-accent rounded-full">
-                  {cartOrders.length}
+                  {cartOrders.reduce((sum, item) => sum + item.quantity, 0)}
+
                 </span>
               )}
             </Button>
 
             {/* Cart Modal */}
+            {/* Cart Modal */}
             {showCart && (
               <div
                 ref={cartRef}
-                className="absolute right-0 mt-12 w-64 bg-background border border-border rounded-lg shadow-lg p-4 z-50"
+                className="fixed top-20 right-6 w-[380px] bg-background border border-border rounded-2xl 
+               shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-[999] flex flex-col
+               animate-in fade-in slide-in-from-top-2 duration-200"
               >
-                <h4 className="font-bold mb-2">Your Cart</h4>
-                {cartOrders.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">No items yet</p>
-                ) : (
-                  cartOrders.map((order, i) => (
-                    <div key={i} className="border-b last:border-b-0 py-1 text-sm">
-                      {order.name} - ${order.total}
+                {/* Header */}
+                <div className="p-4 border-b flex items-center justify-between bg-muted/40 backdrop-blur-sm rounded-t-2xl">
+                  <h3 className="font-semibold text-lg">Your Cart</h3>
+                  <span className="text-xs text-muted-foreground">
+                    {cartOrders.reduce((sum, item) => sum + item.quantity, 0)} items
+                  </span>
+                </div>
+
+                {/* Scroll Area */}
+                <div className="max-h-72 overflow-y-auto">
+                  {cartOrders.length === 0 ? (
+                    <div className="flex flex-col items-center justify-center py-12 text-muted-foreground text-sm">
+                      <Coffee className="h-8 w-8 mb-3 opacity-50" />
+                      Your cart is empty
                     </div>
-                  ))
+                  ) : (
+                    cartOrders.map((order, i) => (
+                      <div
+                        key={i}
+                        className="border-b p-4 text-sm hover:bg-muted/40 transition-colors"
+                      >
+                        <div className="flex justify-between items-center">
+                          <div className="space-y-1">
+                            <p className="font-medium">{order.name}</p>
+                            <p className="text-xs text-muted-foreground">
+                              ${order.total.toFixed(2)}
+                            </p>
+                          </div>
+
+                          <div className="flex items-center gap-2">
+                            <button
+                              onClick={() => decreaseQuantity(i)}
+                              className="w-7 h-7 flex items-center justify-center rounded-md border 
+                             hover:bg-muted transition"
+                            >
+                              -
+                            </button>
+
+                            <span className="font-medium w-6 text-center">
+                              {order.quantity}
+                            </span>
+
+                            <button
+                              onClick={() => increaseQuantity(i)}
+                              className="w-7 h-7 flex items-center justify-center rounded-md border 
+                             hover:bg-muted transition"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+
+                {/* Total */}
+                {cartOrders.length > 0 && (
+                  <div className="border-t p-4 font-semibold flex justify-between bg-muted/20 rounded-b-2xl">
+                    <span>Total:</span>
+                    <span>
+                      $
+                      {cartOrders
+                        .reduce(
+                          (sum, item) => sum + item.total * item.quantity,
+                          0
+                        )
+                        .toFixed(2)}
+                    </span>
+                  </div>
                 )}
+
               </div>
             )}
+
+
+
+
+
+
+
+
+
 
             {/* CTA Button - Desktop */}
             <Button

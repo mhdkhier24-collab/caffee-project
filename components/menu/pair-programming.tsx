@@ -1,7 +1,11 @@
+"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Coffee, Cookie, Plus } from "lucide-react";
+import { useCart, Order } from "@/components/CartContext";
+
+
 
 const combos = [
   {
@@ -43,6 +47,35 @@ const combos = [
 ];
 
 export function PairProgramming() {
+  const { addToCart } = useCart();
+  const handleAddCombo = async (combo: any) => {
+    const priceNumber = parseFloat(combo.comboPrice.replace("$", ""));
+
+    const newOrder: Order = {
+      id: crypto.randomUUID(), // أو Date.now().toString()
+      name: combo.name,
+      base: "N/A",             // لأنه combo ما عنده base
+      milk: "N/A",             // لأنه combo ما عنده milk
+      flavors: [],             // array فارغ
+      extras: [],              // array فارغ
+      shots: 0,                // ما في shots للcombo
+      total: parseFloat(combo.comboPrice.replace("$", "")),
+      quantity: 1,
+    };
+
+    // يضيف للسلة
+    addToCart(newOrder);
+
+    // يخزن بالـ orders.json
+    await fetch("/api/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newOrder),
+    });
+  };
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -105,9 +138,13 @@ export function PairProgramming() {
                       {combo.comboPrice}
                     </span>
                   </div>
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono">
+                  <Button
+                    onClick={() => handleAddCombo(combo)}
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono"
+                  >
                     Add Combo
                   </Button>
+
                 </div>
               </CardContent>
             </Card>

@@ -272,5 +272,1766 @@
     "shots": 3,
     "total": 6.5,
     "createdAt": "2026-02-14T17:31:53.387Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T05:48:21.590Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T06:18:18.640Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T06:18:25.200Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-15T06:18:33.418Z"
+  },
+  {
+    "name": "Caramel Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "caramel"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-15T06:18:45.252Z"
+  },
+  {
+    "name": "Caramel Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [
+      "caramel"
+    ],
+    "extras": [],
+    "shots": 3,
+    "total": 6,
+    "createdAt": "2026-02-15T06:18:50.975Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T06:39:51.337Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T06:40:57.051Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6.25,
+    "createdAt": "2026-02-15T06:41:08.764Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:38:20.577Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-15T09:38:23.150Z"
+  },
+  {
+    "name": "Lavender Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "lavender"
+    ],
+    "extras": [],
+    "shots": 3,
+    "total": 7,
+    "createdAt": "2026-02-15T09:38:29.204Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:42:26.332Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:42:26.640Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 7.5,
+    "createdAt": "2026-02-15T09:42:37.355Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 8.25,
+    "createdAt": "2026-02-15T09:42:42.861Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:45:21.810Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T09:45:28.239Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [
+      "whipped",
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T09:45:32.232Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [
+      "whipped",
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T09:45:32.656Z"
+  },
+  {
+    "name": "Almond Milk Espresso",
+    "base": "espresso",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [
+      "whipped",
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-15T09:45:39.550Z"
+  },
+  {
+    "name": "Almond Milk Espresso",
+    "base": "espresso",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [
+      "whipped",
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-15T09:50:17.466Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:55:19.125Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T09:55:27.426Z"
+  },
+  {
+    "name": "Whole Milk Tea Base",
+    "base": "tea",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [
+      "cocoa"
+    ],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-15T09:55:35.398Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.5,
+    "createdAt": "2026-02-15T10:03:25.432Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 5.5,
+    "createdAt": "2026-02-15T10:03:31.145Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 2.5,
+    "createdAt": "2026-02-15T10:03:39.572Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T10:07:10.211Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T10:07:21.241Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5,
+    "createdAt": "2026-02-15T10:07:23.911Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:07:28.542Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 8,
+    "createdAt": "2026-02-15T10:10:25.199Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T10:19:37.559Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-15T10:19:51.565Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6,
+    "createdAt": "2026-02-15T10:19:56.776Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 6.5,
+    "createdAt": "2026-02-15T10:20:13.785Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.5,
+    "createdAt": "2026-02-15T10:20:39.046Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T10:34:28.767Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6,
+    "createdAt": "2026-02-15T10:34:33.752Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 7.5,
+    "createdAt": "2026-02-15T10:34:50.797Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T10:46:02.879Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.5,
+    "createdAt": "2026-02-15T10:46:30.663Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4,
+    "createdAt": "2026-02-15T10:47:00.035Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:09.416Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:22.756Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:47.088Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:47.651Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:51.154Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:51.516Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:51.673Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:51.826Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:52.244Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:52.400Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:52.681Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:52.872Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:47:53.089Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-15T10:48:47.290Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4,
+    "createdAt": "2026-02-15T10:48:51.813Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 7,
+    "createdAt": "2026-02-15T10:48:54.396Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 6.5,
+    "createdAt": "2026-02-15T10:48:58.676Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-15T10:49:15.478Z"
+  },
+  {
+    "name": "Oat Milk Cold Brew",
+    "base": "cold-brew",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-15T10:49:21.092Z"
+  },
+  {
+    "name": "Oat Milk Drip Coffee",
+    "base": "drip",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 7.25,
+    "createdAt": "2026-02-15T10:49:33.005Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T11:10:39.242Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-15T11:10:41.456Z"
+  },
+  {
+    "name": "Almond Milk Drip Coffee",
+    "base": "drip",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.25,
+    "createdAt": "2026-02-15T11:11:02.667Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:00:37.030Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:00:45.113Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:00:45.742Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T12:00:57.582Z"
+  },
+  {
+    "name": "Whole Milk Cold Brew",
+    "base": "cold-brew",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T12:19:02.113Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 2.5,
+    "createdAt": "2026-02-15T12:19:18.191Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 2.5,
+    "createdAt": "2026-02-15T12:19:32.133Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-15T12:19:43.744Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:20:14.548Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:20:18.430Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:20:25.029Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T12:20:48.517Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T12:20:52.340Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T16:17:24.841Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T16:17:27.615Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-15T16:31:15.141Z"
+  },
+  {
+    "name": "Almond Milk Drip Coffee",
+    "base": "drip",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.25,
+    "createdAt": "2026-02-15T16:31:22.313Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-15T16:40:35.011Z"
+  },
+  {
+    "name": "Soy Milk Espresso",
+    "base": "espresso",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6,
+    "createdAt": "2026-02-15T16:40:39.535Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T16:45:11.980Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T16:45:12.256Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T16:45:14.314Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 7.5,
+    "createdAt": "2026-02-15T16:45:57.959Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-15T17:16:05.848Z"
+  },
+  {
+    "name": "Drip Coffee",
+    "base": "drip",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 5.5,
+    "createdAt": "2026-02-15T17:16:09.456Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-15T17:21:30.630Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T17:48:48.264Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-15T17:48:48.440Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T04:47:24.022Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4,
+    "createdAt": "2026-02-16T04:53:55.621Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.5,
+    "createdAt": "2026-02-16T04:53:58.187Z"
+  },
+  {
+    "name": "Hazelnut Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-16T04:54:28.347Z"
+  },
+  {
+    "name": "Hazelnut Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 2,
+    "total": 5,
+    "createdAt": "2026-02-16T04:54:29.880Z"
+  },
+  {
+    "name": "Hazelnut Lavender Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [
+      "hazelnut",
+      "lavender"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 2,
+    "total": 6.25,
+    "createdAt": "2026-02-16T04:54:34.161Z"
+  },
+  {
+    "name": "Hazelnut Lavender Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [
+      "hazelnut",
+      "lavender"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 2,
+    "total": 6.25,
+    "createdAt": "2026-02-16T04:55:53.991Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T05:11:21.189Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-16T05:11:23.851Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.5,
+    "createdAt": "2026-02-16T05:14:07.636Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.5,
+    "createdAt": "2026-02-16T05:14:28.151Z"
+  },
+  {
+    "name": "Oat Milk Tea Base",
+    "base": "tea",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.75,
+    "createdAt": "2026-02-16T05:22:18.750Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-16T05:30:45.132Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6.25,
+    "createdAt": "2026-02-16T05:30:52.440Z"
+  },
+  {
+    "name": "Hazelnut Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 3,
+    "total": 6.75,
+    "createdAt": "2026-02-16T05:30:54.539Z"
+  },
+  {
+    "name": "Hazelnut Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 3,
+    "total": 7.25,
+    "createdAt": "2026-02-16T05:30:56.544Z"
+  },
+  {
+    "name": "Hazelnut Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 3,
+    "total": 7.25,
+    "createdAt": "2026-02-16T05:35:45.200Z"
+  },
+  {
+    "name": "Lavender Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "lavender"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 5,
+    "total": 9.5,
+    "createdAt": "2026-02-16T05:36:08.422Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T05:47:15.754Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5,
+    "createdAt": "2026-02-16T05:47:19.663Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5,
+    "createdAt": "2026-02-16T05:50:54.617Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T06:01:52.445Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.5,
+    "createdAt": "2026-02-16T06:01:54.588Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 4,
+    "total": 6.5,
+    "createdAt": "2026-02-16T06:11:40.396Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 5,
+    "total": 8.25,
+    "createdAt": "2026-02-16T08:47:26.672Z"
+  },
+  {
+    "name": "Almond Milk Espresso",
+    "base": "espresso",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 5.25,
+    "createdAt": "2026-02-16T08:47:50.434Z"
+  },
+  {
+    "name": "Almond Milk Espresso",
+    "base": "espresso",
+    "milk": "almond",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6.25,
+    "createdAt": "2026-02-16T08:47:56.467Z"
+  },
+  {
+    "name": "Soy Milk Tea Base",
+    "base": "tea",
+    "milk": "soy",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.5,
+    "createdAt": "2026-02-16T08:48:58.844Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T08:50:39.624Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T08:50:39.859Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T08:50:40.039Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T08:50:40.187Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:03:58.514Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 2,
+    "total": 4.5,
+    "createdAt": "2026-02-16T09:04:06.269Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:06:51.072Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:06:51.451Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-16T09:06:53.103Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:16:29.932Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-16T09:16:35.897Z"
+  },
+  {
+    "name": "Oat Milk Cold Brew",
+    "base": "cold-brew",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-16T09:16:40.589Z"
+  },
+  {
+    "name": "Hazelnut Oat Milk Cold Brew",
+    "base": "cold-brew",
+    "milk": "oat",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 5.25,
+    "createdAt": "2026-02-16T09:16:42.483Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:38:15.602Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:38:16.175Z"
+  },
+  {
+    "name": "Whole Milk Espresso",
+    "base": "espresso",
+    "milk": "whole",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 5.5,
+    "createdAt": "2026-02-16T09:38:20.107Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:38:55.228Z"
+  },
+  {
+    "name": "Hazelnut Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-16T09:38:56.827Z"
+  },
+  {
+    "name": "Hazelnut Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [
+      "whipped"
+    ],
+    "shots": 1,
+    "total": 4.5,
+    "createdAt": "2026-02-16T09:38:58.624Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:43:39.046Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:46:54.294Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-16T09:46:56.722Z"
+  },
+  {
+    "name": "Hazelnut Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 4.75,
+    "createdAt": "2026-02-16T09:46:58.410Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:51:43.247Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-16T09:51:46.444Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:55:41.019Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-16T09:56:19.930Z"
+  },
+  {
+    "name": "Hazelnut Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [
+      "hazelnut"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T09:56:22.386Z"
+  },
+  {
+    "name": "Hazelnut Lavender Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [
+      "hazelnut",
+      "lavender"
+    ],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-16T09:56:24.112Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T10:00:54.206Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T10:01:45.214Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T10:02:56.701Z"
+  },
+  {
+    "name": "Tea Base",
+    "base": "tea",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "createdAt": "2026-02-16T10:11:55.567Z"
+  },
+  {
+    "name": "Cold Brew",
+    "base": "cold-brew",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "createdAt": "2026-02-16T10:12:12.257Z"
+  },
+  {
+    "name": "Oat Milk Cold Brew",
+    "base": "cold-brew",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 3,
+    "total": 6.75,
+    "createdAt": "2026-02-16T10:12:16.694Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T10:22:18.761Z"
+  },
+  {
+    "name": "Espresso",
+    "base": "espresso",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.5,
+    "createdAt": "2026-02-16T10:22:19.696Z"
+  },
+  {
+    "name": "Oat Milk Espresso",
+    "base": "espresso",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4.25,
+    "createdAt": "2026-02-16T11:13:26.859Z"
+  },
+  {
+    "name": "Oat Milk Tea Base",
+    "base": "tea",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.75,
+    "createdAt": "2026-02-16T11:13:31.784Z"
+  },
+  {
+    "name": "Oat Milk Tea Base",
+    "base": "tea",
+    "milk": "oat",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3.75,
+    "createdAt": "2026-02-16T11:25:52.195Z"
+  },
+  {
+    "name": "Mocha Almond Milk Drip Coffee",
+    "base": "drip",
+    "milk": "almond",
+    "flavors": [
+      "mocha"
+    ],
+    "extras": [
+      "extra-shot"
+    ],
+    "shots": 2,
+    "total": 6,
+    "createdAt": "2026-02-16T11:33:44.894Z"
+  },
+  {
+    "id": "edde4b1c-b002-4cbd-a752-6d6d48ecc3e5",
+    "name": "The Debug Duo",
+    "base": "N/A",
+    "milk": "N/A",
+    "flavors": [],
+    "extras": [],
+    "shots": 0,
+    "total": 7.5,
+    "quantity": 1,
+    "createdAt": "2026-02-16T11:33:57.603Z"
+  },
+  {
+    "id": "52311721-fe21-42fc-a350-ea6f443471ee",
+    "name": "API Americano",
+    "base": "default",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 3,
+    "quantity": 1,
+    "createdAt": "2026-02-16T11:42:21.676Z"
+  },
+  {
+    "id": "c1f894eb-ad0c-4abc-bad0-c40b413c9c8d",
+    "name": "Latte Loop",
+    "base": "default",
+    "milk": "none",
+    "flavors": [],
+    "extras": [],
+    "shots": 1,
+    "total": 4,
+    "quantity": 1,
+    "createdAt": "2026-02-16T15:55:59.514Z"
+  },
+  {
+    "id": "09af63ae-b35e-4b7c-9542-3a72bdada790",
+    "name": "Morning Standup",
+    "base": "N/A",
+    "milk": "N/A",
+    "flavors": [],
+    "extras": [],
+    "shots": 0,
+    "total": 10,
+    "quantity": 1,
+    "createdAt": "2026-02-16T15:57:39.547Z"
   }
 ]

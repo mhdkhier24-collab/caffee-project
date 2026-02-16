@@ -12,12 +12,33 @@ export function CTASection() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
-      setIsSubmitted(true);
+
+    if (!email.trim()) return;
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "community_signup",
+          email: email,
+          createdAt: new Date().toISOString(),
+        }),
+      });
+
+      if (res.ok) {
+        setIsSubmitted(true);
+        setEmail("");
+      }
+    } catch (error) {
+      console.error("Signup error:", error);
     }
   };
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10 relative overflow-hidden">

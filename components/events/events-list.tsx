@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react"
-
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { EventsRegistration } from "./events-registration"; // تأكد من المسار الصحيح للفورم
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -150,6 +150,9 @@ export function EventsList() {
     filter === "all"
       ? upcomingEvents
       : upcomingEvents.filter((event) => event.type === filter);
+  const registrationRef = useRef<HTMLDivElement>(null);
+  const [selectedEventForForm, setSelectedEventForForm] = useState<string>("");
+
 
   return (
     <section className="py-12 bg-card">
@@ -256,16 +259,27 @@ export function EventsList() {
                   </p>
                 </div>
 
-                {/* Register Button */}
-                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-mono">
+                {/* Registration Button */}
+                <Button
+                  onClick={() => {
+                    setSelectedEventForForm(event.title); // يحدد الحدث الذي ضغط عليه
+                    registrationRef.current?.scrollIntoView({ behavior: "smooth" }); // ينقلك للفورم
+                  }}
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-mono"
+                >
                   Register Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
+
               </CardContent>
             </Card>
           ))}
         </div>
+        <div ref={registrationRef} className="mt-12">
+          <EventsRegistration selectedEventForForm={selectedEventForForm} />
+        </div>
       </div>
+
     </section>
   );
 }

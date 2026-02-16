@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react"
+import React, { useState, useEffect } from "react";
 
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,7 +18,12 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { CheckCircle, Send } from "lucide-react";
 
-export function EventsRegistration() {
+interface EventsRegistrationProps {
+  selectedEventForForm?: string;
+}
+
+export function EventsRegistration({ selectedEventForForm }: EventsRegistrationProps) {
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -29,15 +33,50 @@ export function EventsRegistration() {
     dietary: "",
     newsletter: false,
   });
+  useEffect(() => {
 
-  const handleSubmit = (e: React.FormEvent) => {
+    if (selectedEventForForm) {
+      const eventMap: Record<string, string> = {
+        "JavaScript Fundamentals Workshop": "js-workshop",
+        "Python Data Science Meetup": "python-meetup",
+        "48-Hour Hackathon: Build for Good": "hackathon",
+        "Valentine's Code Jam": "valentine",
+        "React & Next.js 16 Deep Dive": "react-workshop",
+        "Design a Drink Competition": "design-drink",
+        "Monthly Project Showcase": "showcase",
+      };
+      const selectedValue = eventMap[selectedEventForForm] ?? "";
+      setFormData((prev) => ({ ...prev, event: selectedValue }));
+    }
+  }, [selectedEventForForm]);
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Oops! Something went wrong. Please try again.");
+    }
   };
+
 
   if (isSubmitted) {
     return (
-      <section className="py-20 bg-background">
+      <section id="event-registration" className="py-20 bg-background">
+
         <div className="container mx-auto px-4">
           <Card className="max-w-xl mx-auto bg-card border-border">
             <CardContent className="p-8 text-center">
@@ -69,7 +108,8 @@ export function EventsRegistration() {
   }
 
   return (
-    <section className="py-20 bg-background">
+    <section id="event-registration" className="py-20 bg-background">
+
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           {/* Section Header */}

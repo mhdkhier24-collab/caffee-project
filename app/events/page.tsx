@@ -17,7 +17,7 @@ export default function EventsPage() {
       <EventsHero />
       <EventsCalendar />
       <EventsList />
-      <EventsRegistration />
+
       <PastEvents />
       <Partners />
     </>

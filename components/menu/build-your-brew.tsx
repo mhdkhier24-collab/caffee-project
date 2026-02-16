@@ -12,7 +12,7 @@ import { useCart } from "@/components/CartContext";
 
 export function BuildYourBrew() {
 
-  const { addToCart } = useCart();
+  const { addToCart, toggleCart } = useCart();
 
 
   const baseOptions = [
@@ -51,6 +51,8 @@ export function BuildYourBrew() {
   const [flavors, setFlavors] = useState<string[]>([]);
   const [extras, setExtras] = useState<string[]>([]);
   const [shots, setShots] = useState(1);
+  const [cups, setCups] = useState(1);
+
 
   const [isOrdering, setIsOrdering] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
@@ -95,6 +97,7 @@ export function BuildYourBrew() {
     setIsOrdering(true);
     setOrderSuccess(false);
     const newOrder = {
+      id: crypto.randomUUID(),
       name: generateBrewName(),
       base,
       milk,
@@ -102,9 +105,12 @@ export function BuildYourBrew() {
       extras,
       shots,
       total: calculateTotal(),
+      quantity: cups,
 
 
     };
+    setCups(prev => prev + 1)
+
     addToCart(newOrder);
 
     // أضف مباشرة للسلة إذا دالة addOrder موجودة
@@ -179,7 +185,7 @@ export function BuildYourBrew() {
               </CardContent>
             </Card>
 
-            {/* Shot Count */}
+          /*  {/* Shot Count */}
             <Card className="bg-background border-border">
               <CardContent className="p-6">
                 <h3 className="font-mono font-semibold text-foreground mb-4">
@@ -349,10 +355,20 @@ export function BuildYourBrew() {
                     {isOrdering ? "Processing..." : "order.create()"}
 
                   </Button>
+                  {/* 👇 حط هذا الزر هون */}
+                  <Button
+                    onClick={toggleCart}
+                    variant="outline"
+                    className="w-full mt-3"
+                  >
+                    Open Cart
+                  </Button>
                   {orderSuccess && (
                     <p className="text-green-500 text-sm mt-4 font-mono">
     // Order successfully created ✅
                     </p>
+
+
                   )}
                 </div>
               </CardContent>

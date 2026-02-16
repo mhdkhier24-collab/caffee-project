@@ -18,7 +18,7 @@ const team = [
     bio: "Writes code by day, pulls espresso shots by evening. Believes debugging and brewing are the same art.",
     avatar: "AH",
     skills: ["Python", "Latte Art"],
-    social: { github: "#", linkedin: "#" },
+    social: { github: "#", linkedin: "https://www.linkedin.com/in/ahmad-takheen-3031583b1" },
   },
   {
     name: "Kamar",
@@ -26,7 +26,7 @@ const team = [
     bio: "Builds the infrastructure behind the experience. Obsessed with performance, scalability, and clean architecture.",
     avatar: "KA",
     skills: ["System Design", "DevOps"],
-    social: { github: "#", linkedin: "#" },
+    social: { github: "#", linkedin: "https://www.linkedin.com/in/kamar-ghazali-4161603b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   },
   {
     name: "Shahed",
@@ -34,7 +34,7 @@ const team = [
     bio: "Connects developers and organizes events. Previously ran tech meetups for 5 years.",
     avatar: "SH",
     skills: ["Event Planning", "Dev Rel"],
-    social: { linkedin: "#", twitter: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/shahed-alkhatib-3249713b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", twitter: "#" },
   },
   {
     name: "Amr",
@@ -42,7 +42,7 @@ const team = [
     bio: "Keeps everything running smoothly. Background in hospitality and startup operations.",
     avatar: "AM",
     skills: ["Operations", "Strategy"],
-    social: { linkedin: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/amr-kassoumeh-9989753b0" },
   },
   {
     name: "Shaimaa",
@@ -50,7 +50,7 @@ const team = [
     bio: "Designs the vibe before you even taste the coffee.",
     avatar: "SHA",
     skills: ["UI/UX", "Branding"],
-    social: { linkedin: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/shaimaa-abduljaleel-9aaa933b0?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
   },
 ];
 

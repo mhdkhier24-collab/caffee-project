@@ -4,7 +4,7 @@ import { QRSection } from "@/components/home/qr-section";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
 import { EventsPreview } from "@/components/home/events-preview";
 import { CTASection } from "@/components/home/cta-section";
-
+import { Cart } from "@/components/Cart"
 export default function HomePage() {
   return (
     <>
@@ -14,6 +14,7 @@ export default function HomePage() {
       <TestimonialsSection />
       <EventsPreview />
       <CTASection />
+      <Cart />
     </>
   );
 }
