@@ -6,10 +6,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: "export",
-
-
+  experimental: {
+    appDir: true, // ضروري لمجلد app
+  },
+  // احذف output: "export" بالكامل
 };
 
-
-export default nextConfig
+export default nextConfig;
