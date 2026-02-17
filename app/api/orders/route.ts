@@ -1,9 +1,11 @@
 export const dynamic = "force-dynamic";
 
-import { NextResponse } from "next/server";
-import { db } from "@/lib/firebase-admin";
+import { NextRequest, NextResponse } from "next/server";
+import { getDb } from "@/lib/firebase-admin";
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+    const db = getDb(); // <-- استدعي هنا
+
     try {
         const body = await req.json();
 
@@ -18,3 +20,4 @@ export async function POST(req: Request) {
         return NextResponse.json({ success: false }, { status: 500 });
     }
 }
+
