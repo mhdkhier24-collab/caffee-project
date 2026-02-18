@@ -81,8 +81,8 @@ const menuItems: MenuItem[] = [
   },
   {
     id: 4,
-    name: "Mocha Stack",
-    description: "Layered chocolate and espresso. A full-stack flavor experience with whipped cream.",
+    name: "Matcha Core",
+    description: "Clean cache. High performance.Finest matcha green tea, whisked to perfection. Zero jitters, sustained focus.",
     prices: { byte: "$5.00", mega: "$6.00", giga: "$7.00" },
     icon: Layers,
     caffeineLevel: "medium",

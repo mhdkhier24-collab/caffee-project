@@ -14,7 +14,7 @@ export default function HomePage() {
       <TestimonialsSection />
       <EventsPreview />
       <CTASection />
-      <Cart />
+
     </>
   );
 }
